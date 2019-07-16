@@ -62,5 +62,3 @@ INSERT INTO accounts (username, city, transactions_completed, transactions_attem
 -- 9. The bank is losing money in Miami and Phoenix and needs to unload low transaction customers
 -- : How do you delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
 	SELECT "username", "city" FROM "accounts" WHERE "city" LIKE '%miami%' OR "city" LIKE '%phoenix%';
-
--- 4. The Bank needs to track last names. NOTE: Research ALTER TABLE https://www.postgresql.org/docs/10/static/sql-altertable.html
